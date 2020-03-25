@@ -29,7 +29,7 @@
                 ?>">
                     <div class="comp_log">
                         <div class=""><?= $competence ?></div>
-                        <div class=""><img src="../src/images/<?= $items[0] ?>" alt="<?= $items[0]?>"></div>
+                        <div class=""><img src="images/<?= $items[0] ?>" alt="<?= $items[0]?>"></div>
                     </div>
                     <div class="comp_grad">
                             <?php

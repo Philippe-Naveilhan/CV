@@ -47,6 +47,7 @@ a:hover{
     transition: 0.5s;
 }
 section{
+    position: relative;
     width: 100%;
 }
 H1, H2{
@@ -57,6 +58,9 @@ H1 {
 }
 h2{
     font-size: var(--texte-size-md);
+}
+.chapter h2 {
+    font-size: var(--texte-size-xl);
 }
 
 
@@ -235,25 +239,24 @@ main{
 #experiences .content{
     padding-top: 80px;
     width: 100%;
-    position: absolute;
 }
 .timeline{
     position:relative;
     display: flex;
+    align-content: space-around;
+    align-items: baseline;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
     width: 90%;
     left:130px;
 }
 .blocExp{
     margin: auto;
+    margin-top: 50px;
     width: 550px;
     background-color: var(--text-color-dark);
-    border-top-color: var(--text-color-relevant);
+    border-top-color: var(--text-color-dark);
     border-top-style: solid;
-    border-width: 4px;
-    align-content: stretch;
+    border-width: 10px;
 }
 .time{
     z-index: 2;
@@ -290,8 +293,8 @@ main{
     position: relative;
     top: -96px;
     border-top-style: solid;
-    border-color: var(--text-color-dark);
-    border-width: 4px;
+    border-color: var(--text-color-relevant);
+    border-width: 2px;
 }
 .posteTitre{
     border-bottom-right-radius: 8px;
@@ -299,8 +302,6 @@ main{
     padding-right: 16px;
     height: 72px;
     position: absolute;
-    left: -4px;
-    top: -4px;
     background: var(--text-color-relevant);
 }
 .posteSsTitre{
@@ -308,11 +309,16 @@ main{
     position: relative;
     top:80px;
     left: 64px;
+    margin: 0px;
 }
 .posteSsTitre li{
     list-style: none;
 }
+/* Réalisations */
 
+#realisations{
+    text-align: center;
+}
 
 /* contact */
 #contact{
@@ -348,7 +354,7 @@ main{
     border-radius: 2px;
     border-style: none;
     background-color: var(--background-color-medium);
-    font-size: var(--texte-size-sm);
+    font-size: var(--texte-size-md);
     margin-top: var(--marge-md);
     margin-right: var(--marge-sm);
 }
@@ -356,6 +362,7 @@ main{
 #contact button{
     background-color: var(--text-color-relevant);
     border-style: none;
+    font-size: var(--texte-size-md);
     margin-bottom: var(--marge-xl);
 }
 

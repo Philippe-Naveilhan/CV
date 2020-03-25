@@ -3,7 +3,7 @@
     chapter('Contact');
     ?>
 <div class="content">
-    <form id="comments" action="../src/content/mail.php" method="post">
+    <form id="comments" action="../src/mail.php" method="post">
         <div class="bloc left">
             <p>
                 <label for="form_nom">Nom </label>

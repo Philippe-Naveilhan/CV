@@ -4,37 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>CV Philippe NAVEILHAN</title>
 </head>
 <?php
-function chapter($title)
-{ ?>
-    <div class="chapter">
-        <div class="titleChapter radius">
-            <h2><?= $title ?></h2>
-        </div>
-        <div>
-            <div class="line"></div>
-        </div>
-    </div>
-<?php
-}
+include '../src/functions.php'
 ?>
 <body id="home">
     <header>
         <?php
-        include '../src/content/header.php';
+        include 'include/header.php';
         ?>
     </header>
     <main>
         <?php
-        include '../src/content/aboutMe.php';
-        include '../src/content/competences.php';
-        include '../src/content/experiences.php';
-/*        include '../src/content/realisations.php';
-        include '../src/content/contact.php';
-        include '../src/content/footer.php';*/
+        include 'include/aboutMe.php';
+        include 'include/competences.php';
+        include 'include/experiences.php';
+        include 'include/realisations.php';
+        include 'include/contact.php';
+        include 'include/footer.php';
         ?>
     </main>
 </body>

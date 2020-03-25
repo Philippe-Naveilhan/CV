@@ -13,13 +13,13 @@
             <p>✆ 07.83.30.76.21</p>
             <p><a href="mailto:travail@naveilhan.com">travail@naveilhan.com</a></p>
             <div class="little_pict">
-                <div><a href="#"><img src="../src/images/github.png"></a></div>
-                <div><a href="#"><img src="../src/images/linkedin.png"></a></div>
-                <div><a href="#"><img src="../src/images/codewars.png"></a></div>
+                <div><a href="#"><img src="images/github.png"></a></div>
+                <div><a href="#"><img src="images/linkedin.png"></a></div>
+                <div><a href="#"><img src="images/codewars.png"></a></div>
             </div>
         </div>
         <div class="about_photo about">
-            <img src="../src/images/portraitret.png">
+            <img src="images/portraitret.png">
         </div>
         <div class="about_text about radius">
             <p>Né il y a 44 ans, le hasard m'a conduit à être manutentionnaire, assistant de direction, webmaster au 20ème siècle, conseiller financier. Aujourd'hui, je me destine à être développeur, et pourquoi pas, collaborer avec vous.<br/>
