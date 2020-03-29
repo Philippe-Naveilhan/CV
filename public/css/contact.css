@@ -1,0 +1,110 @@
+/* contact */
+
+#contact .content{
+    width: 100%;
+    background-color: var(--background-color-light);
+    padding-bottom: var(--marge-sm);
+    margin-top: var(--marge-sm);
+}
+#contact form{
+    background-color: var(--text-color-dark);
+    color: var(--background-color-medium);
+    font-style: var(--texte-size-sm);
+    border-radius: 2px;
+    margin: auto;
+    margin-top: var(--marge-sm);
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+#contact form .bloc{
+    margin: auto;
+    margin-top: var(--marge-sm);
+    width: 48%;
+    min-width: 350px;
+}
+#contact form .right {
+    text-align: center;
+}
+#contact form .left {
+    text-align: center;
+}
+#contact label{
+    font-size: var(--texte-size-md);
+}
+#contact input, textarea{
+    width: 90%;
+    border-radius: 2px;
+    border-style: none;
+    background-color: var(--background-color-medium);
+    font-size: var(--texte-size-md);
+}
+
+
+#contact button{
+    background-color: var(--text-color-relevant);
+    border-style: none;
+    font-size: var(--texte-size-md);
+    margin-bottom: var(--marge-xl);
+    margin-top: var(--marge-md);
+}
+.errorPOST{
+    margin: auto;
+    margin-top: var(--marge-sm);
+    width: 60%;
+    min-height: 100px;
+    background-color: var(--text-color-relevant);
+    color: var(--text-color-dark);
+    border-radius: 3px;
+    border-style: solid;
+    border-color: var(--text-color-relevant2);
+    border-width: 2px;
+}
+.AR_form{
+    line-height: 2em;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:580px) {
+
+    #contact .content{
+        padding-bottom: 25px;
+        margin-top: 5px;
+        background-color: var(--background-color-dark);
+    }
+    #contact form{
+        background-color: var(--text-color-dark);
+        color: var(--text-color-light);
+        font-size: var(--texte-size-sm);
+        border-radius: 2px;
+        margin: auto;
+        padding-top: 25px;
+        width: 100%;
+    }
+    #contact form .bloc{
+        margin: auto;
+        margin-top: 0px;
+        width: 95%;
+    }
+    #contact form .right {
+        text-align: center;
+    }
+    #contact form .left {
+        text-align: center;
+    }
+    #contact label{
+        font-size: var(--texte-size-md);
+    }
+
+
+    .errorPOST{
+        margin: auto;
+        margin-top: 5px;
+        width: 100%;
+        min-height: 100px;
+        border-style: none;
+    }
+}

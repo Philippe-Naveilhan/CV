@@ -5,12 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
     <title>CV Philippe NAVEILHAN</title>
 </head>
 <?php
-include '../src/functions.php'
+include ('../src/mail.php');
+include '../src/functions.php';
+include '../src/data.php';
 ?>
-<body id="home">
+<body id="aboutMe">
     <header>
         <?php
         include 'include/header.php';
@@ -18,13 +21,23 @@ include '../src/functions.php'
     </header>
     <main>
         <?php
-        include 'include/aboutMe.php';
-        include 'include/competences.php';
-        include 'include/experiences.php';
-        include 'include/realisations.php';
-        include 'include/contact.php';
+        if (!empty($_GET)){
+            if ($_GET['message']=='ok') {?>
+                     <div class="errorPOST AR_form">
+                         <p>Votre message a bien été envoyé, <br>je ne manquerai pas de revenir vers vous au plus vite.</p>
+                    </div>
+                <?php
+            }
+        }
+
+        foreach($parts as $part=>$title){
+            $path = "include/".$part.".php";
+            include $path;
+        }
         include 'include/footer.php';
         ?>
     </main>
 </body>
 </html>
+
+

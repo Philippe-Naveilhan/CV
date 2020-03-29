@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Infant|Open+Sans+Condensed:300|Special+Elite&display=swap');
+
+/*
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Cormorant Infant', serif;
+*/
+
+@import 'aboutMe.css';
+@import 'competences.css';
+@import 'experiences.css';
+@import 'chapter.css';
+
+:root {
+    --background-color-light:white;
+    --background-color-medium:white;
+    --background-color-dark:white;
+    --background-color-relevant:white;
+    --background-color-relevant2:black;
+    --text-color-light:black;
+    --text-color-medium:black;
+    --text-color-dark:black;
+    --text-color-relevant:black;
+    --text-color-relevant2:black;
+    --texte-size-sm:0.7em;
+    --texte-size-md:1em;
+    --texte-size-xl:1.5em;
+    --texte-size-xxl:2em;
+    --marge-sm:8px;
+    --marge-md:calc( var(--marge-sm) * 2);
+    --marge-xl:calc( var(--marge-sm) * 3);
+    --marge-xxl:calc( var(--marge-sm) * 4);
+}
+
+
+#navbar{
+    display:none;
+}
+
+#contact{
+    display:none;
+}
+#footer{
+    display:none;
+}
+#competences{
+    page-break-after: always;
+}
+#aboutMe{
+     page-break-after: always;
+ }
+
+/*general*/
+
+*{
+    margin: 0;
+    font-family: 'Cormorant Infant', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cinzel', serif;
+    font-size: var(--texte-size-md);
+}
+.radius{
+    border-radius: 2px;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color-dark);
+}
+a:hover{
+    color: var(--text-color-relevant);
+    transition: 0.5s;
+}
+section{
+    position: relative;
+    width: 19cm;
+}
+H1, H2{
+    font-family: 'Cinzel', serif;
+}
+H1 {
+    font-size: 1.5em;
+}
+h2{
+    font-size: var(--texte-size-md);
+}
+.chapter h2 {
+    font-size: var(--texte-size-xl);
+}
+
+main{
+    width: 19cm;
+    margin: 0;
+    position: absolute;
+    top:2cm;
+}
+.about_text {
+    max-width: 15cm;
+}
+.overText {
+    position: relative;
+    opacity: 1;
+    left: -0.5cm;
+    top: 2cm;
+    display: block;
+    height: 3cm;
+    width: 3.5cm;
+    background-color: var(--background-color-light);
+    color: var(--text-color-dark);
+}
+.comp_bloc{
+    position: relative;
+    padding: 0.5cm;
+    margin: auto;
+    margin-bottom: 0.25cm;
+    display: block;
+    width: 4cm;
+    height: 3cm;
+    background-color: var(--background-color-light);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--text-color-dark);
+}
+.blocExp{
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--text-color-dark);
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 50px;
+    width: 9cm;
+    background-color: var(--background-color-dark);
+    border-radius: 2px;
+}

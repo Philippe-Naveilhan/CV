@@ -1,30 +1,49 @@
 <section id="contact">
     <?php
     chapter('Contact');
-    ?>
+
+    /// vérification des données du formulaire.
+    ///
+    if (!empty($_POST)) {
+        if (count($mistakes) > 0) {
+            ?>
+            <div class="errorPOST">
+                <ul>
+                    <?php
+                    for ($i = 0; $i < count($mistakes); $i++) {
+                        echo "<li>" . $mistakes[$i] . "</li>";
+                    }
+                    ?>
+                </ul>
+            </div>
+            <?php
+        }
+    }
+ ?>
 <div class="content">
-    <form id="comments" action="../src/mail.php" method="post">
+
+    <form novalidate id="comments" action="index.php#contact" method="post">
         <div class="bloc left">
             <p>
-                <label for="form_nom">Nom </label>
-                <input id="form_nom" name="name" type="text" value="" title="Votre nom" placeholder="your name" required>
+                <label for="form_name">Nom</label><br>
+                <input id="form_name" name="name" type="text" value="<?= $answers['name'] ?? '' ?>" title="Votre nom" placeholder="Ex: Philippe NAVEILHAN" required>
             </p>
             <p>
-                <label for="form_mel">E-mail </label>
-                <input id="form_mel" name="email" type="email" value="" title="Votre mail" placeholder="you@domain.xxx">
+                <label for="form_mel">Mail</label><br>
+                <input id="form_mel" name="email" type="email" value="<?= $answers['email'] ?? '' ?>" title="Votre mail" placeholder="Ex: philippe@naveilhan.com">
             </p>
             <p>
-                <label for="form_tel">Tél </label>
-                <input id="form_tel" name="tel" type="tel" value="" title="Votre téléphone" placeholder="xx.xx.xx.xx.xx">
+                <label for="form_tel">Téléphone</label><br>
+                <input id="form_tel" name="tel" type="tel" value="<?= $answers['tel'] ?? '' ?>" title="Votre téléphone" placeholder="Ex: 01.23.45.67.89">
             </p>
             <p>
-                <label for="form_web">Site web </label>
-                <input id="form_web" name="url" type="url" value="" title="Votre site web" placeholder="http://www...">
+                <label for="form_web">Site de votre entreprise</label><br>
+                <input id="form_web" name="url" type="url" value="<?= $answers['url'] ?? '' ?>" title="Votre site web" placeholder="Ex: http://www.votre-entreprise.fr">
             </p>
         </div>
         <div class="bloc right">
-            <p><label for="form_message"></label><textarea id="form_message" name="comment" cols="30" rows="11" class="required" title="Votre message *" placeholder="Message..." required></textarea></p>
-            <p class="submit"><button>Envoyer ma requête</button></p>
+            <p><label for="form_message">Message</label><br><textarea id="form_message" name="comment" cols="30" rows="6" class="required" title="Votre message" placeholder="Que puis-je pour vous ?." required><?= $answers['comment'] ?? '' ?></textarea></p>
+            <p class="submit"><button>Envoyer mon message</button></p>
         </div>
     </form>
 </section>

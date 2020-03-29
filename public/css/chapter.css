@@ -1,0 +1,45 @@
+/* chapter */
+.chapter{
+    position: relative;
+    padding-top: 24px;
+    width: 100%;
+}
+
+.titleChapter{
+    margin-left: 40px;
+    z-index: 2;
+    position: relative;
+    width:300px;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    background-color: var(--background-color-dark);
+    border-style: solid;
+    border-color: var(--text-color-dark);
+    border-width: 1px;
+    color: var(--text-color-relevant);
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    height: 2px;
+    background-color: var(--text-color-dark);
+}
+
+@media only screen and (max-width:580px) {
+
+    .titleChapter {
+        margin-left: 0px;
+        width: 200px;
+        height: 2em;
+        line-height: 2em;
+    }
+    .line {
+        position: absolute;
+        width: 100%;
+        top: 2em;
+        height: 2px;
+        background-color: var(--text-color-dark);
+    }
