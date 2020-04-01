@@ -45,6 +45,7 @@
 html{
     background-color: var(--background-color-light);
     scroll-behavior: smooth;
+    scroll-padding-top: 30px;
 }
 body{
     font-family: 'Cinzel', serif;

@@ -1,0 +1,94 @@
+#competences{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+#competences img{
+    width: 50px;
+}
+
+.overText{
+    opacity: 1;
+    position: relative;
+    left: 0;
+    width: auto;
+}
+
+.comp_bloc{
+    margin-top: 30px;
+    height: 400px;
+}
+
+.modifSuppr{
+    padding-top: 25px;
+    text-align: center;
+}
+.AJOUT{
+    text-align: center;
+    justify-items: center;
+}
+big{
+    font-size: 5em;
+}
+.ajout_div{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    font-size: var(--texte-size-xl);
+    background-color: var(--background-color-relevant);
+}
+.ajout_div:hover{
+    color: var(--text-color-light);
+    background-color: var(--background-color-dark);
+    transition: 0.5s;
+}
+.ajout_div:hover a{
+    color: var(--text-color-light);
+    background-color: var(--background-color-dark);
+    transition: 0.5s;
+}
+a{
+    background-color: var(--background-color-relevant);
+    font-size: var(--texte-size-md);
+    padding: 2px 10px 2px 10px;
+}
+a:hover{
+    color: var(--text-color-light);
+    background-color: var(--background-color-dark);
+    font-size: var(--texte-size-md);
+    transition: 0.5s;
+}
+
+.addExp{
+ text-align: center;
+}
+.addExp .ajout_div{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.posteSsTitre{
+    height: 200px;
+    left: 50px;
+}
+.MSExp{
+    margin-top: 0px;
+}
+#comments{
+    width: 95%;
+    display: flex;
+    align-content: space-around;
+}
+
+#comments label{
+    font-size: var(--texte-size-sm);
+}
+#comments .bloc{
+    width: 40%;
+    display: block;
+}
+#comments .left{
+    padding-top: 40px;
+    text-align: right;
+}
+

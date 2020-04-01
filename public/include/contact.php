@@ -22,7 +22,7 @@
  ?>
 <div class="content">
 
-    <form novalidate id="comments" action="index.php#contact" method="post">
+    <form id="comments" action="index.php#contact" method="post">
         <div class="bloc left">
             <p>
                 <label for="form_name">Nom</label><br>
@@ -34,7 +34,7 @@
             </p>
             <p>
                 <label for="form_tel">Téléphone</label><br>
-                <input id="form_tel" name="tel" type="tel" value="<?= $answers['tel'] ?? '' ?>" title="Votre téléphone" placeholder="Ex: 01.23.45.67.89">
+                <input id="form_tel" name="tel" type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" value="<?= $answers['tel'] ?? '' ?>" title="Votre téléphone" placeholder="Ex: 01.23.45.67.89">
             </p>
             <p>
                 <label for="form_web">Site de votre entreprise</label><br>

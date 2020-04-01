@@ -1,89 +1,62 @@
 /* header */
 .navbar{
-    overflow: hidden;
     z-index: 22;
     width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
     position: fixed;
+}
+.burger a {
+    color: var(--text-color-medium);
+     margin-left: 5px;
+     font-size: 2em;
+ }
+.burger{
+    color: var(--text-color-medium);
+    background-color: var(--background-color-dark);
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+#links{
     height: 50px;
     background-color: var(--text-color-dark);
-    border-bottom-style: solid;
     border-color: var(--text-color-relevant);
+    border-bottom-style: solid;
     border-width: 2px;
-}
-.navbar ul {
-    height: 50px;
-    width: 95%;
+    width: 100%;
     margin: 0;
     display: flex;
     justify-content: space-around;
-    list-style: none;
 }
-.navbar li{
-    margin-top: 15px;
-}
-.navbar a{
+#links a{
+    line-height: 2em;
     font-family: 'Cinzel', serif;
     text-decoration: none;
     font-size: var(--texte-size-md);
     color: var(--background-color-medium);
 }
-.navbar a:hover{
-    font-size: var(--texte-size-md);
+#links a:hover{
     color: var(--text-color-relevant);
     transition: 0.5s;
 }
-#burger_close{
-    font-size: 2em;
-    display: none;
-}
-#burger_open{
-     font-size: 2em;
-     display: none;
- }
 
 @media only screen and (max-width:580px) {
-
-    #burger_close{
+    .burger{
         display: block;
     }
-    #burger_open:target {
-        display: block;
-    }
-    #burger_open:target < #navbar {
-        width: 100%;
-        opacity: 1;
-        height: 200px;
-        transition: 0.5s;
-    }
-
-    #burger_open:target < #burger_close {
+    #links{
+        opacity: 0.98;
+        padding-top: 25px;
+        padding-left: 25px;
+        width: 200px;
+        height: 220px;
         display: none;
     }
-
-    #burger_close:target {
+    #links:target {
         display: block;
-    }
-    #burger_close:target < #navbar{
-        width: 100%;
-        opacity: 1;
-        height: 50px;
-        transition: 0.5s;
-    }
-    #burger_close:target < #burger_open {
-                               display: none;
-                            }
-    .navbar ul{
-        width: 100%;
-        opacity: 1;
-        height: 200px;
-        justify-content: flex-start;
         flex-direction: column;
+        text-align: left;
     }
-    .navbar li{
-        margin-top: 0;
-    }
+
 
 }

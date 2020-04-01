@@ -4,7 +4,7 @@ $parts = [  'aboutMe'=>'About me',
             'experiences'=>'Expérience',
 ///         'realisations'=>'Réalisations',
             'contact'=>'Contact'];
-
+/*
 $competences = [
     'Illustrator' => [
         'illustrator.png',
@@ -60,11 +60,11 @@ $experiences=[
         "Objecteur de conscience",
         "CREAHI Poitiers",
         [
-            "Gestion de la revue du CREAHI",
-            "Création d'une base de données ACCESS de gestion des abonnements",
-            "Gestion de la reprographie",
-            "Retranscription informatique de colloques",
-            "Formateur 'outils informatique'"
+"Gestion de la revue du CREAHI",
+"Création d'une base de données ACCESS de gestion des abonnements",
+"Gestion de la reprographie",
+"Retranscription informatique de colloques",
+"Formateur 'outils informatique'"
         ]
     ],
     [ 1998,
@@ -72,14 +72,14 @@ $experiences=[
         'CDD & Interim',
         'Châtellerault-Rennes-Tours',
         [
-            "Assistant administratif",
-            "Webmaster du siècle passé (Sodifrance - SSII)",
-            "Patisserie industrielle",
-            "Charcuterie industrielle",
-            "Relevé de compteur d'eau",
-            "Manutentions diverses",
-            "Magasinier",
-            "Moultes autres actiités diverses & variées"
+"Assistant administratif",
+"Webmaster du siècle passé (Sodifrance - SSII)",
+"Patisserie industrielle",
+"Charcuterie industrielle",
+"Relevé de compteur d'eau",
+"Manutentions diverses",
+"Magasinier",
+"Moultes autres actiités diverses & variées"
         ]
     ],
     [ 2001,
@@ -87,11 +87,11 @@ $experiences=[
         'Conseiller Commercial',
         "Caisse d'Epargne",
         [
-            "Accueil clientèle",
-            "Gestion des problématiques client",
-            "Détection de besoins clients",
-            "Proposition & vente de solutions",
-            "Orientation"
+"Accueil clientèle",
+"Gestion des problématiques client",
+"Détection de besoins clients",
+"Proposition & vente de solutions",
+"Orientation"
         ]
     ],
     [ 2009,
@@ -99,11 +99,11 @@ $experiences=[
         "Conseiller financier",
         "Caisse d'Epargne",
         [
-            "Gestion de portefeuille client",
-            "Montage de crédits",
-            "Conseil fiscalité",
-            "Accompagnement",
-            "Gestion du risque"
+"Gestion de portefeuille client",
+"Montage de crédits",
+"Conseil fiscalité",
+"Accompagnement",
+"Gestion du risque"
         ]
     ],
     [ 2020,
@@ -111,12 +111,12 @@ $experiences=[
         "Etudiant",
         "WildCodeSchool d'Orléans",
         [
-            "Autonomie & veille",
-            "HML-CSS",
-            "PHP-Symfony",
-            "Algorithmie",
-            "Git-Github",
-            "Travail d'équipe"
+"Autonomie & veille",
+"HML-CSS",
+"PHP-Symfony",
+"Algorithmie",
+"Git-Github",
+"Travail d'équipe"
         ]
     ],
     [
@@ -125,13 +125,13 @@ $experiences=[
         "Développeur PHP",
         "Avec vous ?",
         [
-            "Vous satisfaire",
-            "Répondre aux besoins de votre entreprise",
-            "M'investir",
-            "Faire des gateaux au chocolat",
-            "Des tartes tatins l'hiver...",
-            "sortir les poubelles..."
+"Vous satisfaire",
+"Répondre aux besoins de votre entreprise",
+"M'investir",
+"Faire des gateaux au chocolat",
+"Des tartes tatins l'hiver...",
+"sortir les poubelles..."
         ]
     ]
 ];
-
+*/

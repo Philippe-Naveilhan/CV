@@ -9,7 +9,12 @@
     <title>CV Philippe NAVEILHAN</title>
 </head>
 <?php
-include ('../src/mail.php');
+require  '../src/connect.php';
+$pdo = new PDO(DSN, USER, PASS);
+$statement = $pdo->query("SELECT * FROM competences WHERE visible=1");
+$competences = $statement->fetchAll();
+
+include '../src/mail.php';
 include '../src/functions.php';
 include '../src/data.php';
 ?>

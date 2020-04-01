@@ -18,7 +18,8 @@
     padding-right: 25px;
     padding-left: 25px;
     margin-top: 50px;
-    width: 450px;
+    width: 440px;
+    height: 400px;
     background-color: var(--background-color-dark);
     border-radius: 2px;
 }
@@ -140,13 +141,13 @@
         height: 64px;
     }
     .posteSsTitre{
-        font-size: var(--texte-size-sm);
-        width: 100%;
+        font-size: var(--texte-size-md);
+        width: 98%;
         color: var(--text-color-light);
         padding-top: 32px;;
         position: relative;
         top:64px;
-        left: 0px;
+        left: 5px;
     }
 
 }

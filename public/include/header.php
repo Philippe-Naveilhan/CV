@@ -1,14 +1,15 @@
 <nav id='navbar' class="navbar">
-    <ul>
-        <a href="#burger_open"><li id="burger_close">≡</li></a>
-        <a href="#burger_close"><li id="burger_open">≡</li></a>
+    <div class="burger">
+        <a href="#links">≡</a>
+    </div>
+    <div id="links">
 <?php
 foreach($parts as $part=>$partname)
     {
 ?>
-        <li alt="<?= $partname ?>"><a href="#<?= $part ?>"><?= $partname ?></a></li>
+       <a href="#<?= $part ?>"><?= $partname ?></a>
 <?php
     }
 ?>
-    </ul>
+    </div>
 </nav>

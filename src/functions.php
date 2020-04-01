@@ -10,4 +10,9 @@ function chapter($title)
         </div>
     </div>
     <?php
-} ?>
+}
+
+    $dir='../images';
+    $listPictures = scandir($dir);
+
+?>
